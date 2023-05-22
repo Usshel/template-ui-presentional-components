@@ -1,0 +1,5 @@
+<form [formGroup]="form" (ngSubmit)="onProductFormSubmitted()">
+    <input formControlName="name" type="text">
+    <input formControlName="price" type="number">
+    <input type="submit" [value]="stateLabel$ | async">
+</form>

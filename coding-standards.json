@@ -1,0 +1,17 @@
+{
+  "entityRelations": {
+    "component": {
+      "viewModel": ["PROPERTY"]
+    }
+  },
+  "entities": {
+    "component": {
+      "folder": "components/$name$",
+      "type": "ANGULAR_COMPONENT"
+    },
+    "viewModel": {
+      "type": "DATA_STRUCTURE",
+      "folder": "components/$name$"
+    }
+  }
+}

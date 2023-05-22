@@ -1,0 +1,14 @@
+<div [formGroup]="form">
+<form >
+    <input formControlName="street" type="text" id="street">
+    <input formControlName="city" type="text" id="city">
+    <select formControlName="countryId">
+        <option 
+        *ngFor="let countryId of countriesWithIds | async"
+        [value]="countryId.id"
+        >
+            {{countryId.name}}
+        </option>
+    </select>
+</form>
+</div>
